@@ -1,0 +1,22 @@
+OpenEmbeded checkouts used to build older 3.x kernels
+(needs older toolchain, last build was with with Ubuntu 12.4.5 LTS)
+
+Build Configuration:
+BB_VERSION        = "1.16.0"
+TARGET_ARCH       = "arm"
+TARGET_OS         = "linux-gnueabi"
+MACHINE           = "akita"
+DISTRO_VERSION    = "oe-core.0"
+TUNE_FEATURES     = "armv5 dsp thumb xscale"
+TARGET_FPU        = "soft"
+meta              = "danny:d6c69df33e5b447eb01ee7fca921b94c3a853203"
+meta-handheld     = "danny:d641e71a7c09cd24c72e690ad1981e49da612bcd"
+meta-initramfs    = "danny:f00028caf257e386c0f3ae46bd4b3ba53dd0729d"
+
+
+andrea@andrea-ThinkPad-T520:/oe/oe-core$ git branch
+* danny
+
+andrea@andrea-ThinkPad-T520:/oe/oe-core/bitbake$ git branch
+* 1.16
+  master
